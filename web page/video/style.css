@@ -1,0 +1,82 @@
+/* Basic styling for the web page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    color: #14863a;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.video-container {
+    position:fixed;
+    top: 10;
+    left: 10;
+    width: 50%;
+    height: 50%;
+    overflow: hidden;
+    z-index: -1; /* Ensure the video stays in the background */
+}
+
+video#background-video {
+    width: 50%;
+    height: 30%;
+    object-fit: cover; /* Ensures the video covers the entire container */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure content stays above the video */
+    text-align: center;
+    color: white;
+}
+
+header {
+    background-color: rgba(48, 29, 29, 0.5); /* Semi-transparent background */
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
